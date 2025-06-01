@@ -1,0 +1,14 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<h2>Patient Dashboard</h2>
+<h3>Your Prescriptions</h3>
+<ul>
+{% for p in prescriptions %}
+    <li>
+        From Dr. {{ p.doctor.username }} — {{ p.medicines }}
+    </li>
+{% empty %}
+    <li>No prescriptions yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}

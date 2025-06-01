@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital</title>
+    <style>
+        body {
+            background-image: url("{% static bg_image %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="font-size: 48px;">Hospital Management System</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a> |
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+        </nav>
+        <hr>
+
+        {% block content %}{% endblock %}
+    </center>
+</body>
+</html>

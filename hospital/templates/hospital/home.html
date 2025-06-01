@@ -1,0 +1,13 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<h1>Welcome to Hospital System</h1>
+{% comment %} <a href="{% url 'doctor_signup' %}">Doctor Sign Up</a> | {% endcomment %}
+<strong><a href="{% url 'doctor_signup' %}" style="font-size: 20px;">    Doctor Sign Up     </a></strong> |
+{% comment %} 
+<a href="{% url 'patient_signup' %}">Patient Sign Up</a> | {% endcomment %}
+<strong><a href="{% url 'patient_signup' %}" style="font-size: 20px;">           Patient Sign Up   </a></strong>
+<br>
+<br>
+<strong><a href="{% url 'login' %}" style="font-size: 20px; color: black;">  Login  </a></strong>
+
+{% endblock %}

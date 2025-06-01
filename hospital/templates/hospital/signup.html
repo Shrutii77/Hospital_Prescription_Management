@@ -1,0 +1,21 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<style>
+  {% if title == "Patient Sign Up" %}
+    body {
+      color: black !important;
+    }
+    /* Also nav links or other text, if needed */
+    nav a {
+      color: black !important;
+    }
+  {% endif %}
+</style>
+
+<h2>{{ title }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+</form>
+{% endblock %}

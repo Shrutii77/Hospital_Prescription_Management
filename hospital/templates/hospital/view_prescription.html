@@ -1,0 +1,7 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<h2>Prescription</h2>
+<p><strong>Doctor:</strong> {{ prescription.doctor.username }}</p>
+<p><strong>Patient:</strong> {{ prescription.patient.username }}</p>
+<p><strong>Medicines:</strong> {{ prescription.medicines }}</p>
+{% endblock %}
