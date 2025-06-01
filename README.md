@@ -1,4 +1,7 @@
 # Hospital_Prescription_Management
+The Hospital Prescription Management System is a web application built using Django framework to facilitate seamless management of prescriptions within a hospital environment.
+Doctors can register, login, create prescriptions for patients, and generate unique shareable links for each prescription. Patients can register, login, and securely view their prescriptions using these shared links.
+
 HOME_PAGE
 ![image alt](https://github.com/Shrutii77/Hospital_Prescription_Management/blob/main/Home_Page.png?raw=true)
 
