@@ -20,9 +20,9 @@ Doctor_Dashboard
 
 
 Patient_Dashboard
-![image alt( https://github.com/Shrutii77/Hospital_Prescription_Management/blob/main/hospital/Screenshots/Patient_Dashboard.png?raw=true)
+![image alt( https://github.com/Shrutii77/Hospital_Prescription_Management/blob/main/hospital/Screenshots/Patient_Dashboard_Page.png?raw=true)
 
 
 Create_Prescription
-![image alt](https://github.com/Shrutii77/Hospital_Prescription_Management/blob/main/hospital/Screenshots/Create_Prescription.png?raw=true
+![image alt](https://github.com/Shrutii77/Hospital_Prescription_Management/blob/main/hospital/Screenshots/Create_Prescription_Page.png?raw=true
 )
