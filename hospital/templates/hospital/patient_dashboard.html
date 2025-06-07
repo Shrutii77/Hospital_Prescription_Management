@@ -1,0 +1,32 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<center>
+  <h2>Patient Dashboard</h2>
+  <h3>Your Prescriptions</h3>
+  {% for prescription in prescriptions %}
+    <div style="border:3px solid black; padding: 15px; margin-bottom: 20px; max-width: 600px; margin-left:auto; margin-right:auto;">
+      <h1 style="text-align:center;">Vitality Hospital</h1>
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <div>
+          <p><strong>Name:</strong> {{ prescription.patient.username }}</p>
+          <p><strong>Address:</strong> {{ prescription.patient_address }}</p>
+        </div>
+        <div style="text-align:right;">
+          <p><strong>Age:</strong> {{ prescription.patient_age }}</p>
+          <p><strong>Date:</strong> {{ prescription.created_at|date:"d M Y" }}</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p><strong>Medicines:</strong></p>
+      <p style="white-space: pre-line;">{{ prescription.medicines }}</p>
+
+      <p style="text-align:right; margin-top: 20px;"><strong>Doctor:</strong> {{ prescription.doctor.username }}</p>
+    </div>
+  {% empty %}
+    <p>No prescriptions found.</p>
+  {% endfor %}
+</center>
+{% endblock %}
